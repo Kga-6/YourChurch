@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Church</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <header >
+    <h1>Your Church</h1>
+    <nav id="church-nav">
+      <button class="church-button">Home</button>
+      <button class="church-button">Bible</button>
+      <button class="church-button">Daily</button>
+    </nav>
+    <input id="search-bar" type="search" placeholder="Search for a Bible.">
+  </header>
+
+  <main>
+    <section id="Bible-header">
+      <div class="bible-content" id="header-bibles-content">
+        <label class="bible-content-label" for="bibles">Bible:</label>
+        <select class="bibles-selection selection" name="bibles" id="bibles"></select>
+      </div>
+  
+      <div class="bible-content" id="header-Books-content">
+        <label class="bible-content-label" for="Books">Book:</label>
+        <select class="books-selection selection" name="Books" id="Books"></select>
+      </div>
+  
+      <div class="bible-content" id="header-Chapters-content">
+        <label class="bible-content-label" for="chapters">Chapter:</label>
+        <select class="chapters-selection selection" name="chapters" id="chapters"></select>
+      </div>
+    </section>
+  
+    <section id="passage">
+      <button class="passage-button" id="prevPassage">Prev</button>
+      <div id="passage-content">
+        <h1 id="chapter-title">Genesis 1</h1>
+        <div id="passage-container"></div>
+      </div>
+      <button class="passage-button" id="nextPassage">Next</button>
+    </section>
+  </main>
+
+  <footer>Footer</footer>
+
+  <script src="./utils/fetch.js"></script>
+  <script src="./index.js"></script>
+  
+</body>
+</html>
